@@ -1,4 +1,5 @@
-# wav2msu libs
+# wav2msu.js
 
-The goal of this repository is to port @jbaiter's wav2msu to Javascript for use on web pages.
+A library to encode audio data as MSU-1 compatible PCM.
+
 
