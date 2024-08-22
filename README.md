@@ -2,7 +2,7 @@
 
 A library to encode/decode audio data as MSU-1 compatible PCM.
 
-[Demo](https://fordi.github.io/wav2msu)
+[Demo](https://fordi.github.io/wav2msu.js)
 
 .wav files should be 16-bit, stereo, 44.1kHz, little-endian.  The codec does no data-wrangling.  If you need that, there are other JS libs
 you can wrap around this one.
