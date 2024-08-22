@@ -106,3 +106,17 @@ form.addEventListener('submit', async (e) => {
 ```
 
 See `docs/example.js` for a more robust example of use.
+
+
+## MSU-1 Format
+
+Near's old Byuu site is gone, so I'm putting this here for prosperity.
+It's relatively simple.  Multibyte numbers are little-endian.
+
+| name | type | description |
+|------|------|-------------|
+| magic| string| "MSU1"     |
+| loop | uint32| sample number to loop back at |
+| data | uint16* | 16-bit, stereo, PCM data |
+
+Also, pour one out for Near; dude did so much for the emu community.
