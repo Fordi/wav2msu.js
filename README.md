@@ -2,6 +2,8 @@
 
 A library to encode/decode audio data as MSU-1 compatible PCM.
 
+[Demo](https://fordi.github.io/wav2msu/example.html)
+
 ## Classes
 
 * `WavError` extends Error
