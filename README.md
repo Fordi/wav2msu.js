@@ -7,6 +7,9 @@ A library to encode/decode audio data as MSU-1 compatible PCM.
 .wav files should be 16-bit, stereo, 44.1kHz, little-endian.  The codec does no data-wrangling.  If you need that, there are other JS libs
 you can wrap around this one.
 
+
+Based on @jbaiter's [wav2msu implementation in C](https://github.com/jbaiter/wav2msu), which was in turn based on Kawa's C# implementation (which is no longer there).
+
 ## Classes
 
 * `WavError` extends Error
