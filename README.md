@@ -110,7 +110,7 @@ See `docs/example.js` for a more robust example of use.
 
 ## MSU-1 Format
 
-Near's old Byuu site is gone, so I'm putting this here for prosperity.
+Near's old Byuu site is gone, so I'm putting this here for posterity.
 It's relatively simple.  Multibyte numbers are little-endian.
 
 | name | type | description |
