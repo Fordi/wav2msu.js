@@ -57,6 +57,7 @@ const makeWav = async ({
 
 let currentLoopPoint = null;
 const player = document.querySelector('#player');
+const go = document.querySelector('#go');
 player.addEventListener('ended', () => {
   if (currentLoopPoint !== null) {
     player.currentTime = currentLoopPoint / 44100;
@@ -71,15 +72,16 @@ document.querySelector('#source').addEventListener('change', async (e) => {
   }
   if (name.endsWith('.wav')) {
     player.src = URL.createObjectURL(e.target.files[0]);
+    go.innerHTML = "Download MSU1 PCM";
   } else if (name) {
     const wavBuffers = await makeWav({
       source: e.target,
       packLoop: true,
     });
     currentLoopPoint = wavBuffers.loopPoint;
-    debugger;
     const loopBlob = new Blob([wavBuffers.loop], { type: "audio/wav" });
     player.src = URL.createObjectURL(loopBlob);
+    go.innerHTML = "Download WAV(s)";
   }
 });
 

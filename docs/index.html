@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MSU1 test</title>
+    <style>
+      #error {
+        color: red;
+      }
+      article {
+        width: 6in;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>wav2msu MSU-1 Codec demo</h1>
+      <p>
+        Choose a .wav file, optionally with an intro .wav file, to create an MSU-1 compatible PCM file for download.
+      </p>
+      <p>
+        Choose a .pcm file to hear a preview of it in the player below.
+      </p>
+      <form id="formMsu1">
+        <div class="field">
+          <label for="source">
+            Main: <input type="file" id="source" /> (wav or pcm)
+          </label>
+        </div>
+        <div class="field">
+          <label for="intro">
+            Intro: <input type="file" id="intro" /> (optional)
+          </label>
+        </div>
+        <div class="field">
+          <label for="loop">
+            Loop point: <input type="number" id="loop" value="0"/> (in samples, optional)
+          </label>
+        </div>
+        <button id="go">Download MSU1 PCM</button>
+        <div id="error"></div>
+      </form>
+      <audio id="player" controls>
+      </audio>
+    </article>
+    <script type="module" src="./example.js"></script>
+  </body>
+</html>
