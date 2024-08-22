@@ -1,3 +1,5 @@
 docs/index.html
 docs/example.js
 pnpm-lock.yaml
+*.c
+*.wav
