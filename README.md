@@ -56,7 +56,7 @@ Convert a Uint16Array of raw samples to a WAV ArrayBuffer
 ## Example of use
 
 ```javascript
-import { wavBufferToRawPcm, rawPcmToMsu } from './index.js';
+import { wavBufferToRawPcm, rawPcmToMsu } from '@fordi-org/wav2msu';
 
 const form = document.querySelector('#formMsu1');
 

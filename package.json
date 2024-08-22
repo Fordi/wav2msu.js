@@ -1,5 +1,5 @@
 {
-  "name": "wav2msu",
+  "name": "@fordi-org/wav2msu",
   "version": "1.0.0",
   "description": "",
   "main": "docs/index.js",
